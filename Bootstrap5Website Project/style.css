@@ -1,0 +1,17 @@
+
+/* this is for the navbar, jadi navbar tidak menimpa gambar. 
+maka dibuat invisible block dibawah navbar agar gambar terpress kebawah */
+body::before {
+    display: block;
+    content: '';
+    height: 70px;
+}
+
+/* Jadi kita ingin disini kalau aiatas md breakpoints yang
+    dimana 768px maka ukurannya akan menjadi 50% saja */
+@media (min-width: 768px) {
+    .news-input {
+    width: 50%;
+}
+}
+
